@@ -157,7 +157,7 @@ for i in range(2,8):
         print(i)                      
 
 """    
-
+"""
 correct_pin=(1234)
 for i in range(3):
    pin=int(input("enter pin"))
@@ -187,7 +187,7 @@ for i in range(3):
     break
 else:
     print("invalid pin")
-     
+"""  
     
     
        

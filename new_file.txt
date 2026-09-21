@@ -1,0 +1,2 @@
+wellcome to python programs
+python is an interpreted language

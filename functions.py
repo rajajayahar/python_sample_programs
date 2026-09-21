@@ -181,5 +181,3 @@ result = filter(lambda a:len(a)>= 5 ,name)
 print(list(result))
 
 
-result = filter(lambda a:(len(a)>= 5 ))
-print(result(raja))

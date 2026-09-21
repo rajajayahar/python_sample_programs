@@ -59,12 +59,14 @@ if day=="saturday" or day=="sunday":
 else: 
     print("working day")
 """
+"""
 #not
 logged_in=False
 if not logged_in:
     print("loggin successful, welcom user")
 else:
     print("please login") 
+"""
 """
 #membership operaters 
 #checks whether an element is present or not keywods
@@ -75,8 +77,10 @@ if movie in movies:
     print("movie available")
 else:
     print("movie is not available")  
+    
 
 #not in    
+"""
 """
 employees=["aji","abi","kumar"]
 employe_name=input("Enter the employee name")
@@ -84,9 +88,11 @@ if employe_name not in employees:
     print("access denied")
 else:
     print("access granded") 
+"""    
     
-"""
-"""
+    
+
+
 #identity operaters checks whether memory location is same or not
 #key wods is or not
 valu1=35

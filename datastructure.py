@@ -101,7 +101,6 @@ print(tuple2[3][1])
 print(tuple2[3][2])
 
 
-
 #tuple unpacking
 person=("raja",22,"mtm")
 name,age,place=person
@@ -291,3 +290,4 @@ student={
 
 }
 print(sum(student.values()))
+

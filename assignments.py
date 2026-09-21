@@ -174,6 +174,8 @@ def calculate_amount():
 print(calculate_amount())
 """
 #data structures
+#string
+
 bookname="python","java","c++"
 authorname=["alex","revon","ceron"]
 member_details=("raja","jayahar","biju")
@@ -185,5 +187,77 @@ bookname[-1]
 bookname[0:5]
 print(bookname)
 print(authorname[0][0:2])
-bookname="python"
-print(bookname.upper())
+print(tuple(bookname.upper()for bookname in bookname))
+print(tuple(bookname.lower()for bookname in bookname))
+print(tuple(bookname.title()for bookname in bookname))
+print(tuple(bookname.replace("py","to")for bookname in bookname))
+#bookname[0] = "java"
+#it comes error because string and tuple where immutable
+
+#list
+books=["python","java","c++"]
+print(list(books))
+
+books.insert(1,"php")
+books.remove("java")
+books.extend("java")
+books.append(["php","python","pgr"])
+books=["python","java","c++"]
+books.sort()
+uppercase_books = [book.upper() for book in books]
+print(uppercase_books)
+print(books)
+
+#tuple
+categories = ("Programming", "Database", "Networking")
+
+cat1, cat2, cat3 = categories
+print(cat1)
+
+#set
+genere={"tamil","history","science"}
+memberid={101,102,103,104}
+genere.add("social")
+genere.remove("history")
+
+print(genere)
+print(genere.union(memberid))
+print(genere.intersection(memberid))
+
+genres = {"Python", "Java", "Python", "C++"}
+print(genres)
+#autometicaly one python has been deleted becase their having another one
+
+#dictionary
+book={
+    "book1":{
+     "Member_Details":"raja",
+    "Book_Details":"python",
+    "Issue_Status":"issue"
+    },
+     "book2":{
+     "Member_Details":"biju",
+      "Book_Details":"python",
+     "Issue_Status":"available"
+    },
+     "book3":{
+    "Member_Details":"chandru",
+    "Book_Details":"python",
+    "Issue_Status":"issue"
+     },
+}
+print(book["book3"]["Book_Details"])
+print(book.keys())
+print(book.values())
+for key,value in book.items():
+    if key=="book1":
+        print(key,value)
+
+print(hash("raja")) 
+print(hash(10)) 
+point=(1,2)
+print(hash(point))          
+
+books=["python"]
+books.extend("python")
+print(books)
